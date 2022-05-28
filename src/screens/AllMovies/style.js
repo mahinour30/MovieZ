@@ -22,5 +22,10 @@ export const styles = StyleSheet.create({
     },
     favorite: {
         color: COLORS.Primary,
+    },
+    activityIndicator: {
+        justifyContent: 'center',
+        color: COLORS.Primary,
+        flex: 1,
     }
 })

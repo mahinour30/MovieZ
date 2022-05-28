@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 import Header from '../../components/Header'
 
 const MyMovies = ({ navigation }) => {
-    const movies = useSelector(state => state.movieList)
+    const movies = useSelector(state => state.reducer.movieList)
     return (
         <View style={styles.container}>
             <Header

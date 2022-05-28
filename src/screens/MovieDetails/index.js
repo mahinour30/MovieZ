@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 const MovieDetails = ({ navigation, route }) => {
     const { item } = route.params
     const dispatch = useDispatch();
-    const movies = useSelector(state => state.movieList)
+    const movies = useSelector(state => state.reducer.movieList)
     const [fav, setFav] = useState(false)
 
     useEffect(() => {
